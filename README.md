@@ -29,6 +29,8 @@ Some prompts to answer:
 
 You can include a simple diagram or bullet list if helpful.
 
+We have information such as the genre, mood, danceability, and valence about each song. The User Profile will store the user's preferences, such as their favorite genre, mood, or if they like acoustic songs. To compute a score, we ask if the genre and mood match the preferences, which give us yes/no answers. To calculate the energy we use inverse absolute difference, which gives a score based on the comparison between the song energy and the user's preference. We add all these together, and rank the songs from largest score to lowest, and return the top k songs.
+
 ---
 
 ## Getting Started
